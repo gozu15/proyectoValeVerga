@@ -9,7 +9,7 @@
 
 <ion-content>
 
-  <ion-segment color="danger" (ionChange)="segmentChanged($event)">
+ <!--<ion-segment color="danger" (ionChange)="segmentChanged($event)">
     <ion-segment-button value="solicitudes" checked>
       <ion-label>Solicitudes</ion-label>
     </ion-segment-button>
@@ -56,7 +56,7 @@
   <ion-list *ngIf="segmento=='aceptados'">
 
     <ion-row>
-      <!-- Move back one screen of the slides -->
+
       <ion-col size="4" text-left>
         <ion-button fill="clear" (click)="back()">
           <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
@@ -70,7 +70,7 @@
       </ion-col>
 
 
-      <!-- Move forward one screen of the slides -->
+      
       <ion-col size="4" text-right>
         <ion-button fill="clear" (click)="next()">
           <ion-icon name="arrow-forward" slot="icon-only"></ion-icon>
@@ -112,5 +112,5 @@
       <p>No hay reservas canceladas.</p>
     </ion-item>
   </ion-list>
-
+--> 
 </ion-content>
