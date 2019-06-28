@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Detalle de usuario</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button #return></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <ion-card-header>
+    <ion-card-title>informacion de usuario</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+      <ion-item  class="activated">
+          <ion-label slot="start"><b>Nombre</b> </ion-label>
+          <ion-label>{{usuario.nombre}}</ion-label>
+        </ion-item>
+        <ion-item class="activated">
+            <ion-label slot="start"><b>Apellidos</b> </ion-label>
+          <ion-label>{{usuario.apellidos}}</ion-label>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label slot="start"><b>Correo</b> </ion-label>
+          <ion-label>{{usuario.correo}}</ion-label>
+        </ion-item>
+        
+        <ion-item >
+            <ion-label slot="start"><b>Edad</b> </ion-label>
+          <ion-label>{{usuario.edad}}</ion-label>
+        </ion-item>
+  </ion-card-content>
+</ion-card>
+
+</ion-content>
