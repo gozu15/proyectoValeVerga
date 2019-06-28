@@ -1,33 +1,49 @@
-<ion-content color="primary" padding>
+<ion-content color="dark" padding>
   <form #form="ngForm" (ngSubmit)="login(form.value)">
     <ion-grid>
-      <ion-row color="primary" justify-content-center>
+      <ion-row color="dark" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
           <div text-center>
-            <h3>BABILON</h3>
-          </div><br><br><br><br><br>
+            <h3>TECNOLOGIAS DE INTERNET</h3>
+          </div>
+          <br><br><br><br><br>
           <div padding>
-            <ion-item>
+            <!-- <ion-item>
               <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
             </ion-item>
             <ion-item>
               <ion-input name="password" type="password" placeholder="Password" ngModel required></ion-input>
+            </ion-item> -->
+            <ion-item>
+              <ion-label position="floating">email@email.com</ion-label>
+              <ion-input name="email" type="email" ngModel required></ion-input>
             </ion-item>
+              
+          </div>
+          <div padding>
+            <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              <ion-input name="password" type="password" ngModel required></ion-input>
+          </ion-item>
           </div>
 
           <div padding>
-            <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block">Iniciar Sesión</ion-button>
+            <ion-button color="danger" shape="round" fill="outline" size="large" type="submit" [disabled]="form.invalid" expand="block">Iniciar Sesión</ion-button>
           </div>
           <div padding>
-            <ion-item lines="none" slot="end" (click)="Register()">
+            <!-- <ion-item lines="none" slot="end" (click)="Register()">
               Registrarse
-            </ion-item>
-            <ion-item lines="none" slot="end" (click)="forgot()">
+            </ion-item> -->
+            <ion-label (click)="Register()" color="primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crear Cuenta</ion-label>
+            <!-- <ion-item lines="none" slot="end" (click)="forgot()">
               Recuperar Cuenta
-            </ion-item>
+            </ion-item> -->
+          </div>
+          <div padding>
+              <ion-label (click)="forgot()" color="primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olvidaste tu contraseña?</ion-label>
           </div>
           <div padding center>
-            <ion-item lines="none">
+            <ion-item color="dark" lines="none">
               {{mensaje}}
             </ion-item>
           </div>

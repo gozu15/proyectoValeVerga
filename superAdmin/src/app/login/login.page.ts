@@ -44,10 +44,10 @@ export class LoginPage implements OnInit {
             this.router.navigate(['/']);
           }
         }else{
-          this.mensaje="error usuario no encontrado, es posible que el usuario aya sido  o suspendido"
+          this.mensaje="error usuario no encontrado, es posible que el usuario aya sido eliminado  o suspendido"
         }
         }else{
-          this.mensaje="error usuario no encontrado, es posible que el usuario aya sido  o suspendido"
+          this.mensaje="error usuario no encontrado, es posible que el usuario aya sido eliminado  o suspendido"
         }
         })
       })
@@ -62,8 +62,7 @@ export class LoginPage implements OnInit {
 
   async forgot() {
     const alert = await this.alertController.create({
-      header: 'Recuperar cuenta',
-      message: 'Ingrese su email para recuperar su cuenta',
+      header: 'Ingrese su email para recuperar su contraseña',
       inputs: [
         {
           name: 'email',
