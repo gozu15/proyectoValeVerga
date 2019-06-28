@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-toolbar color=primary>
+    <ion-toolbar color=dark>
       <ion-title>Actualizar Negocio</ion-title>
       <ion-buttons slot="start">
         <ion-back-button #return></ion-back-button>
@@ -54,7 +54,7 @@
               <ion-list-header>Detalles</ion-list-header>
               <ion-item>
                 <ion-label position="floating">Capacidad</ion-label>
-                <ion-input name="capacidad" type="number" [ngModel]="negocio.capacidad"></ion-input>
+                <ion-input name="capacidad" type="number" [ngModel]="negocio.capasidad"></ion-input>
               </ion-item>
   
               <ion-item>
@@ -92,7 +92,7 @@
             </div>
   
             <div padding>
-              <ion-button size="large" type="submit" color="success" expand="block">Actualizar</ion-button>
+              <ion-button size="large" type="submit" color="danger" expand="block" >Actualizar</ion-button>
             </div>
           </ion-col>
         </ion-row>

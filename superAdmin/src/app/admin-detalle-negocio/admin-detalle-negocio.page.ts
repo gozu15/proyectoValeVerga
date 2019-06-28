@@ -21,10 +21,8 @@ export class AdminDetalleNegocioPage implements OnInit {
     //Inicializacion del contructor
     //inicializando la interface de negocio
     this.negocio = {
-      $key: "", nombre: "", costo: 0, ubicacion: "", latitud: 0, longitud: 0, estado: "",
-      detalle: {
-        bar: false, capasidad: 0, escenario: false, garage: false, garsones: 0, servicioComida: false, tipoSalon: ""
-      },     
+      $key: "", nombre: "", precio: 0, ubicacion: "", latitud: 0, longitud: 0, estado: "",bar: false, capasidad: 0, escenario: false, garage: false, garsones: 0, servicioComida: false, tipoSalon: "",
+          
       idadministrador:"",
       nrocontacto:""
     }
