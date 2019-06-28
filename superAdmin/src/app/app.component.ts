@@ -15,8 +15,23 @@ import { UsersService } from './services/users.service';
 export class AppComponent {
   public appPages1 = [
     {
+      title: 'Inicio',
+      url: '/home',
+      icon: 'home'
+    },
+    {
       title: 'Usuarios',
       url: '/list-user',
+      icon: 'list'
+    },
+    {
+      title: 'Negocios',
+      url: '/admin-negocios',
+      icon: 'list'
+    },
+    {
+      title: 'Reservas',
+      url: '/admin-reservas',
       icon: 'list'
     }
   ];

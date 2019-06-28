@@ -36,7 +36,7 @@ export class AdminAgregarNegocioPage implements OnInit {
   }
  
   guardar(form: any) {
-    form.value.imagen = this.nombreImagen;
+    
     this.service.getCurrentNivel(this.service.getCurrentEmail()).then(user=>{
       form.value.idadministrador=user[0].key;
       console.log(form.value);

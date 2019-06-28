@@ -6,7 +6,7 @@ export interface Negocio {
     latitud: number;
     longitud: number;
     estado: string;
-    imagen: string;
+   // imagen: string;
     idadministrador:string;
     nrocontacto:string;
     detalle: {
