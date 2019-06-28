@@ -1,6 +1,6 @@
 <ion-content>
 
-  <ion-segment (ionChange)="segmentChanged($event)">
+  <ion-segment color="danger" (ionChange)="segmentChanged($event)">
     <ion-segment-button value="solicitudes" checked>
       <ion-label>Solicitudes</ion-label>
     </ion-segment-button>
@@ -32,7 +32,7 @@
       </ion-item>
 
     </ion-item-sliding>
-    <ion-item *ngIf="reservasSolicitudes==''">
+    <ion-item *ngIf="segmento=='reservasSolicitudes'">
         <p>No hay ninguna solicitud</p>
     </ion-item>
   </ion-list>
@@ -56,7 +56,7 @@
       </ion-item>
     </ion-item>
 
-    <ion-item *ngIf="reservasAceptadas==''">
+    <ion-item *ngIf="segmento=='reservasAceptadas'">
         <p>No hay eventos Confirmados</p>
     </ion-item>
   </ion-list>
